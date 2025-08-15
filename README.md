@@ -1,2 +1,2 @@
 # penguin
- pgengui - penguin password generator
+penguin (pgen-gui) password generator
