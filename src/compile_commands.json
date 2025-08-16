@@ -1,0 +1,44 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-c",
+      "-std=c++17",
+      "-I/usr/include/x86_64-linux-gnu/qt6/QtWidgets",
+      "-I/usr/include/x86_64-linux-gnu/qt6",
+      "-DQT_WIDGETS_LIB",
+      "-I/usr/include/x86_64-linux-gnu/qt6/QtCore",
+      "-I/usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++",
+      "-I/usr/include/x86_64-linux-gnu/qt6/QtGui",
+      "-DQT_GUI_LIB",
+      "-DQT_CORE_LIB",
+      "-o",
+      "build/penguin",
+      "src/main.cc"
+    ],
+    "directory": "/home/london/git/repos/penguin",
+    "file": "/home/london/git/repos/penguin/src/main.cc",
+    "output": "/home/london/git/repos/penguin/build/penguin"
+  },
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-c",
+      "-std=c++17",
+      "-I/usr/include/x86_64-linux-gnu/qt6/QtWidgets",
+      "-I/usr/include/x86_64-linux-gnu/qt6",
+      "-DQT_WIDGETS_LIB",
+      "-I/usr/include/x86_64-linux-gnu/qt6/QtCore",
+      "-I/usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++",
+      "-I/usr/include/x86_64-linux-gnu/qt6/QtGui",
+      "-DQT_GUI_LIB",
+      "-DQT_CORE_LIB",
+      "-o",
+      "build/penguin",
+      "src/gen.cc"
+    ],
+    "directory": "/home/london/git/repos/penguin",
+    "file": "/home/london/git/repos/penguin/src/gen.cc",
+    "output": "/home/london/git/repos/penguin/build/penguin"
+  }
+]

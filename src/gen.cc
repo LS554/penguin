@@ -1,6 +1,7 @@
 // Copyright (c) 2025, London Sheard
 // Licensed under the 3-Clause Sheard License
 // See the LICENSE file in project root for details.
+// Visit https://github.com/LS554/3CSL for details on the 3CSL.
 
 #include <random>
 
