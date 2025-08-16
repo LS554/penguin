@@ -34,6 +34,7 @@ int main(int argc, char** argv) {
     QMenu* editMenu = window->menuBar()->addMenu("Edit");
     QAction* copyAction = new QAction("Copy password", window);
     editMenu->addAction(copyAction);
+    copyAction->setEnabled(false);
 
     QObject::connect(licenseAction, &QAction::triggered, [=](){
 	QMessageBox::information(window, "License",
@@ -104,7 +105,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.)");
 
     window->setCentralWidget(central);
 
-    QObject::connect(genButton, &QPushButton::clicked, [passLabel, textbox, copyButton]() -> void {
+    QObject::connect(genButton, &QPushButton::clicked, [passLabel, textbox, copyButton, copyAction]() -> void {
 	QString text = textbox->text();
 	bool ok;
 	int len = text.toInt(&ok);
@@ -117,6 +118,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.)");
         passLabel->setText(QString::fromStdString(password));
         passLabel->show();
 	copyButton->show();
+	copyAction->setEnabled(true);
 	return;
     });
 
